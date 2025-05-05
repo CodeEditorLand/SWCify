@@ -1,45 +1,37 @@
 {
-	"name": "swcify",
-	"version": "0.0.1",
-	"private": false,
-	"description": "SWC browserify transform",
-	"keywords": [
-		"codeeditorland",
-		"land",
-		"playform"
-	],
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/SWCify#readme",
-	"bugs": {
-		"url": "HTTPS://GitHub.Com/CodeEditorLand/SWCify/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+HTTPS://github.com/CodeEditorLand/SWCify.git"
-	},
-	"license": "SEE LICENSE IN LICENSE",
-	"author": {
-		"name": "Source 🖋️ Open 👐🏻",
-		"email": "Source/Open@Editor.Land",
-		"url": "HTTPS://Editor.Land"
-	},
-	"type": "module",
-	"scripts": {
-		"prepublishOnly": "Build 'Source/**/*.ts'"
-	},
-	"dependencies": {
-		"inline-source-map-comment": "1.0.5",
-		"source-map-to-comment": "3.0.0"
-	},
-	"devDependencies": {
-		"@codeeditorland/core": "0.0.1",
-		"@playform/build": "0.2.3",
-		"browserify": "17.0.1",
-		"convert-source-map": "2.0.0",
-		"cross-spawn": "7.0.6",
-		"lodash.zipobject": "4.1.3",
-		"tape": "5.9.0"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "swcify",
+  "description": "SWC browserify transform",
+  "version": "1.0.1",
+  "author": "Dmitry Yvanov <dfcreative@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/swc-project/swcify",
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swc-project/swcify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swc-project/swcify/issues"
+  },
+  "peerDependencies": {
+    "@swc/core": "^1.0.25"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@swc/core": "^1.0.28",
+    "browserify": "^16.2.3",
+    "convert-source-map": "^1.5.1",
+    "cross-spawn": "^6.0.5",
+    "lodash.zipobject": "^4.1.3",
+    "tape": "^4.10.1"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "dependencies": {
+    "inline-source-map-comment": "^1.0.5",
+    "source-map-to-comment": "^1.1.0"
+  }
 }
